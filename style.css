@@ -1,40 +1,64 @@
-section {
-    font-family: Arial, sans-serif;
-}
-h2.section p{
-       font-style: bold; 
-}
 
 
-.hightlight {
+* {
+    box-sizing: border-box;
+}
+
+/*Week 3*/
+
+.highlight {
     background-color: yellow;
 }
 
-#main-header {
-    font-family: Arial, sans-serif;
-    color: rgb(0, 255, 42);
-}
-
-section.section2 {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-h2:hover {
-    color: blue;
-    cursor: pointer;
-}
-
 h1 {
-    font-family: Arial, sans-serif;
-    color: rgb(0, 255, 42);
+    color: blue;
     text-align: center;
-    /* margin: 20px 10px 30px 60px; */
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    border: 2px solid rgb(20, 22, 20); 
+}
+
+#main-header {
+    color: grey;
+}
+
+
+
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    font-size: 28px;
+    color: blue;
+}
+
+label {
+    display: flex;
+    color: black;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }

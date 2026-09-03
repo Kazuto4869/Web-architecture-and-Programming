@@ -1,88 +1,33 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Week 4</title>
-    </head>
-    <body>
-        <header>
-            <h1>Week 4</h1>
-            <p>A simple page for practicing JavaScript.</p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <strong>Nhập Điểm</strong>
+    </header>
+    <main>
+      <form id="subjects">
+        <div>
+          <label for="subID">ID môn học</label>
+          <input type="number" name="id_mon_hoc" id="subID" />
+        </div>
+        <div>
+          <label for="subname">Tên môn học</label>
+          <input type="text" name="ten_mon_hoc" id="subname" />
+        </div>
+        <div>
+          <label for="subscore">Điểm môn học</label>
+          <input type="number" name="diem_mon_hoc" id="subscore" />
+        </div>
 
-        <main>
-            <section id="about">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <button id="change-text">Change text</button>
-            </section>
-
-            <section id="products">
-                <h2>Products</h2>
-                <div class="card" data-id="1">Product 1</div>
-                <div class="card" data-id="2">Product 2</div>
-                <div class="card" data-id="3">Product 3</div>
-            </section>
-
-            <section id="services">
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button id="show-message">Show message</button>
-                <p id="message"></p>
-            </section>
-
-            <section id="news">
-                <h2>Latest News</h2>
-                <ul id="news-list">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Consectetur adipisicing elit.</li>
-                    <li>Temporibus eaque saepe dolorem.</li>
-                </ul>
-                <button id="add-news">Add news</button>
-            </section>
-
-            <section id="house-price">
-                <h2>House Price Prediction</h2>
-                <form action="/predict" method="post">
-                    <label for="address">Address</label>
-                    <input id="address" name="address" type="text" required />
-
-                    <label for="area">Area (m²)</label>
-                    <input id="area" name="area" type="number" min="1" required />
-
-                    <label for="bedrooms">Bedrooms</label>
-                    <select id="bedrooms" name="bedrooms">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4+</option>
-                    </select>
-
-                    <label for="bathrooms">Bathrooms</label>
-                    <input id="bathrooms" name="bathrooms" type="number" min="1" required />
-
-                    <p>Property type</p>
-                    <input id="house" name="property-type" type="radio" value="house" checked />
-                    <label for="house">House</label>
-                    <input id="apartment" name="property-type" type="radio" value="apartment" />
-                    <label for="apartment">Apartment</label>
-
-                    <label for="city">City</label>
-                    <select id="city" name="city">
-                        <option value="hanoi">Hanoi</option>
-                        <option value="danang">Da Nang</option>
-                        <option value="hochiminh">Ho Chi Minh City</option>
-                    </select>
-
-                    <label for="description">Description</label>
-                    <textarea id="description" name="description" placeholder="Enter more information"></textarea>
-
-                    <button type="submit">Predict</button>
-                </form>
-            </section>
-        </main>
-
-        <script src="app.js"></script>
-    </body>
+        <button type="submit">submit</button>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
 </html>
